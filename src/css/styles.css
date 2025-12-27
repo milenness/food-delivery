@@ -6,13 +6,10 @@
 /* Sections style */
 @import url('./header.css');
 @import url('./hero.css');
-@import url('./welcome.css');
-@import url('./quality.css');
-@import url('./experience.css');
-@import url('./subscribe.css');
+@import url('./benefits.css');
+@import url('./favorites.css');
 @import url('./testimonials.css');
-@import url('./location.css');
+@import url('./subscribe.css');
 @import url('./footer.css');
 @import url('./mobile_menu.css');
-@import url('./modal_welcome.css');
-@import url('./light-dark.css');
+@import url('./modal_form.css');
