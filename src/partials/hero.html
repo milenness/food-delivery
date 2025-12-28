@@ -1,10 +1,52 @@
-<section class="hero">
+<section class="hero-section">
   <div class="container">
-    <h1 class="title-hero">Savor the Essence of Specialty Coffee</h1>
-    <p class="paragraph-hero">
-      At CoffeeJoy, we believe every cup tells a story. Join us in exploring the
-      rich flavors and aromas of our carefully curated coffee selections.
-    </p>
-    <a href="#quality" class="btn bth-hero">Learn More</a>
+    <div class="hero-container">
+      <div class="hero-text-wrapper">
+        <h1 class="section-title hero-title">
+          Enjoy your favorite food from anywhere
+        </h1>
+        <p class="paragraph-hero">
+          With just a few clicks, you can have your favorite meals delivered
+          straight to your doorstep, no matter where you are. Order now and
+          enjoy a hassle-free and delicious meal from the comfort of your own
+          home.
+        </p>
+        <button class="btn hero-btn" type="button">Order Now</button>
+      </div>
+      <div class="slider-container">
+        <button class="slider-btn prev-btn" aria-label="Попередня">
+          <svg class="arrow-icon" width="11" height="20">
+            <use href="/img/icons.svg#icon-left"></use>
+          </svg>
+        </button>
+
+        <ul class="slider-list">
+          <li class="slider-item active">
+            <img
+              srcset="img/hero/img1.png 1x, img/hero/img1@2x.png 2x"
+              alt="Slide 1"
+            />
+          </li>
+          <li class="slider-item">
+            <img
+              srcset="img/hero/img2.png 1x, img/hero/img2@2x.png 2x"
+              alt="Slide 2"
+            />
+          </li>
+          <li class="slider-item">
+            <img
+              srcset="img/hero/img3.png 1x, img/hero/img3@2x.png 2x"
+              alt="Slide 3"
+            />
+          </li>
+        </ul>
+
+        <button class="slider-btn next-btn rigth" aria-label="Наступна">
+          <svg class="arrow-icon" width="11.5" height="20.5">
+            <use href="/img/icons.svg#icon-rigth"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
   </div>
 </section>
