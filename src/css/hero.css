@@ -126,6 +126,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);;
   }
 
   .rigth {
@@ -172,4 +174,13 @@
   .next-btn {
     right: -39px;
   }
+}
+
+.slider-btn:hover {
+  fill: var(--dark-green);
+}
+
+.slider-btn:focus,
+.slider-btn:active {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.16);
 }

@@ -10,6 +10,12 @@
   padding: 41px 0 72px;
 }
 
+@media screen and (min-width: 480px) {
+  .benefits-section {
+    background-image: url("data:image/svg+xml,%3Csvg width='480' height='1050' viewBox='0 0 480 1050' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 111.692C107.452 -37.2306 372.548 -37.2306 480 111.692V1050H0V111.692Z' fill='%23FFE550'/%3E%3C/svg%3E");
+  }
+}
+
 @media screen and (min-width: 768px) {
   .benefits-section {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='768' height='1140' viewBox='0 0 768 1140' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 131.975C333.368 -57.5 599.561 342.5 768 0V1140H0V131.975Z' fill='%23FFE550'/%3e%3c/svg%3e");
@@ -50,12 +56,12 @@
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .benefits-img-wrapper {
     display: flex;
-    align-items: center;
   }
 
   .tab-img-wrapper {
     display: flex;
     align-items: flex-end;
+    padding-bottom: 67px;
   }
 
   .benefits-img {
@@ -158,20 +164,80 @@
   }
 }
 
-.benefits-item {
+.benefits-icon {
+  margin-bottom: 8px;
 }
 
-.benefits-icon {
-}
 .benefits-name {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 16px;
 }
+
+@media screen and (min-width: 1280px) {
+  .benefits-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+}
+
 .benefits-desk {
+  font-size: 14px;
+  line-height: 1.43;
 }
-.btn {
+
+@media screen and (min-width: 1280px) {
+  .benefits-desk {
+    line-height: 1.5;
+  }
 }
+
 .benefits-btn {
+  border: 2px solid var(--dark-green);
+  border-radius: 30px;
+  padding: 10px 22px;
+
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--black);
+  background: #fff;
+  transition: background-color 250ms ease-in-out, border 250ms ease-in-out;
+}
+
+.benefits-btn:hover,
+.benefits-btn:focus,
+.benefits-btn:active {
+  border: 2px solid var(--button-green);
+  background-color: var(--button-green);
 }
 
 .button-wrapper {
-  margin-bottom: 36px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .button-wrapper {
+    margin-bottom: 36px;
+  }
+}
+
+.read-link {
+  display: flex;
+  align-items: center;
+  gap: 3.4px;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #000;
+}
+
+.read-link:hover,
+.read-link:focus,
+.read-link:active {
+  font-weight: 500;
 }

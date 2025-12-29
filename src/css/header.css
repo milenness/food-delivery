@@ -53,7 +53,8 @@
 }
 
 .menu-link:hover,
-.menu-link:focus {
+.menu-link:focus,
+.menu-link:active {
   font-weight: 500;
   text-decoration: underline;
   color: var(--button-green);
@@ -69,6 +70,7 @@
     padding: 6px 18px;
     width: 98px;
     background: var(--button-green);
+    transition: background-color 250ms ease-in-out;
   }
 
   .header-btn:hover {

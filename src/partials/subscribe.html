@@ -1,0 +1,53 @@
+<section class="sub-section">
+  <div class="container">
+    <div class="sub-container">
+      <img
+        class="sub-img"
+        srcset="img/sub/img.png 1x, img/sub/img@2x.png 2x"
+        alt="Banana"
+      />
+
+      <div class="sub-content">
+        <h2 class="section-title sub-title">Subscribe to get special offers</h2>
+        <p class="sub-text">
+          Order now and receive 10% off your first meal with enjoy your favorite
+          food from anywhere.
+        </p>
+        <form class="sub-form" novalidate>
+          <div class="sub-input-wrapper">
+            <label for="user-email" class="visually-hidden"
+              >Enter your email</label
+            >
+
+            <input
+              type="email"
+              id="user-email"
+              name="user-email"
+              class="sub-input"
+              placeholder="Enter your email"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              autocomplete="email"
+              aria-describedby="email-error"
+            />
+
+            <div
+              class="error-message-wrapper"
+              id="email-error"
+              aria-live="polite"
+            >
+              <svg class="error-icon" width="12" height="12">
+                <use href="/img/icons.svg#icon-error"></use>
+              </svg>
+              <span class="error-message">
+                Not a valid email address (example@email.com)
+              </span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn sub-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
