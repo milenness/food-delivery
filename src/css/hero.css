@@ -59,6 +59,8 @@
   padding: 6px 18px;
   width: 98px;
   background: var(--button-green);
+  position: relative;
+  z-index: 10;
 }
 
 .hero-btn:hover {
@@ -127,7 +129,7 @@
     align-items: center;
     justify-content: center;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .rigth {

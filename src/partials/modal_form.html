@@ -1,0 +1,114 @@
+<div class="modal-backdrop">
+  <div class="modal">
+    <button class="modal-btn-close" type="button">
+      <svg class="modal-close-icon" width="24" height="24">
+        <use href="/img/icons.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+
+    <p class="modal-title">Order Form</p>
+
+    <form class="modal-form" novalidate>
+      <div class="modal-field-wrapper">
+        <label for="user-name" class="modal-label">Your name</label>
+        <input
+          type="text"
+          id="user-name"
+          name="user-name"
+          class="modal-input"
+          placeholder="Your name"
+          required
+          pattern="^[a-zA-Zа-яА-ЯіїєІЇЄ' ]{3,25}$"
+          autocomplete="name"
+          aria-describedby="name-error"
+        />
+        <div
+          class="modal-error-message-wrapper"
+          id="name-error"
+          aria-live="polite"
+        >
+          <svg class="error-icon" width="12" height="12">
+            <use href="./img/icons.svg#icon-error"></use>
+          </svg>
+          <span class="modal-error-message"
+            >The name must be between 3 and 25 characters</span
+          >
+        </div>
+      </div>
+
+      <div class="modal-field-wrapper">
+        <label for="user-tel" class="modal-label">Phone number</label>
+        <input
+          type="tel"
+          id="user-tel"
+          name="user-tel"
+          class="modal-input"
+          placeholder="+38(0_ _) _ _ _   _ _   _ _"
+          required
+          pattern="[0-9]{10}"
+          autocomplete="tel"
+          aria-describedby="tel-error"
+        />
+        <div
+          class="modal-error-message-wrapper"
+          id="tel-error"
+          aria-live="polite"
+        >
+          <svg class="error-icon" width="12" height="12">
+            <use href="./img/icons.svg#icon-error"></use>
+          </svg>
+          <span class="modal-error-message"
+            >This phone must be in the format 0990000000</span
+          >
+        </div>
+      </div>
+
+      <div class="modal-field-wrapper">
+        <label for="user-email" class="modal-label">E-mail</label>
+        <input
+          type="email"
+          id="user-email"
+          name="user-email"
+          class="modal-input"
+          placeholder="example@gmail.com"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          autocomplete="email"
+          aria-describedby="email-error"
+        />
+        <div
+          class="modal-error-message-wrapper"
+          id="email-error"
+          aria-live="polite"
+        >
+          <svg class="error-icon" width="12" height="12">
+            <use href="./img/icons.svg#icon-error"></use>
+          </svg>
+          <span class="modal-error-message"
+            >Please enter a valid email address</span
+          >
+        </div>
+      </div>
+
+      <div class="modal-btn-wrapper">
+        <div class="modal-warning-tooltip">
+          <svg
+            width="165"
+            height="54"
+            viewBox="0 0 165 54"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 24C0 10.7452 10.7452 0 24 0H141C154.255 0 165 10.7452 165 24C165 37.2548 154.255 48 141 48H93.75C89.3566 47.9526 86.8934 50.0474 82.5 54C78.1066 50.0474 75.6434 47.9526 71.25 48H24C10.7452 48 0 37.2548 0 24Z"
+              fill="#FE6060"
+            />
+          </svg>
+          <span class="tooltip-text">All fields are required</span>
+        </div>
+
+        <button type="submit" class="btn modal-btn">Send</button>
+      </div>
+    </form>
+  </div>
+</div>

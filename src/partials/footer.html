@@ -1,0 +1,87 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer-container">
+      <nav class="footer-nav">
+        <a class="footer-logo" href="./index.html" aria-label="Site logo">
+          <svg class="logo-icon" width="69" height="51">
+            <use href="/img/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+
+        <ul class="footer-menu">
+          <li class="menu-item">
+            <a class="menu-link" href="#hero">Home</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#benefits">About</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#testimonials">Service</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#favorites">Menu</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#subscribe">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer-form-wrapper">
+        <form class="footer-form" novalidate>
+          <div class="footer-input-wrapper">
+            <label for="user-email" class="footer-label">Subscribe</label>
+
+            <input
+              type="email"
+              id="user-email"
+              name="user-email"
+              class="footer-input"
+              placeholder="Enter your email"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              autocomplete="email"
+              aria-describedby="email-error"
+            />
+
+            <div
+              class="error-message-wrapper"
+              id="email-error"
+              aria-live="polite"
+            >
+              <svg class="error-icon" width="12" height="12">
+                <use href="/img/icons.svg#icon-error"></use>
+              </svg>
+              <span class="error-message">
+                Not a valid email address (example@email.com)
+              </span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn footer-btn">Subscribe</button>
+        </form>
+
+        <span class="policy-text">
+          By subscribing you agree to with our<a class="privacy-link" href="#">
+            Privacy Policy</a
+          >
+        </span>
+      </div>
+
+      <div class="policy-wrapper">
+        <ul class="policy-list">
+          <li class="policy-item">
+            <a href="#" class="policy-link">Privacy Policy</a>
+          </li>
+          <li class="policy-item">
+            <a href="#" class="policy-link">Terms of Service</a>
+          </li>
+          <li class="policy-item">
+            <a href="#" class="policy-link">Cookies Settings</a>
+          </li>
+        </ul>
+
+        <p class="footer-copy">&copy; 2022 FoodSta. All right reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
